@@ -109,12 +109,12 @@ div[id^="Imagenes"] {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     max-width: 800px;
     margin-left: auto;
-    margin-right: auto; /* Centrar las cajas horizontalmente */
+    margin-right: auto; 
     font-size: 16px;
-    text-align: center; /* Centrar el contenido dentro de la caja */
+    text-align: center; 
 }
 
-/* Estilo específico para los bloques de código dentro de las cajas */
+
 div[id^="intro-text"] pre,
 div[id^="Encabezado"] pre,
 div[id^="Listas"] pre,
@@ -125,15 +125,14 @@ div[id^="Imagenes"] pre {
     padding: 15px;
     color: #b0b0b0;
     border-radius: 5px;
-    text-align: left; /* Justificar el texto del código a la izquierda */
-    overflow-x: auto; /* Para manejar desbordamiento horizontal */
+    text-align: left; 
+    overflow-x: auto; 
     font-size: 14px;
-    margin: 10px auto; /* Centrar el bloque de código dentro de la caja */
-    max-width: 95%; /* Limitar el ancho del bloque de código */
+    margin: 10px auto; 
+    max-width: 95%; 
 }
 
 
-/* Ajuste de los links del menú */
 .sidebar ul li a {
     text-align: center;
     transition: all 0.3s ease;

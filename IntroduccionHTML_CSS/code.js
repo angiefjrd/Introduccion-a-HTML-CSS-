@@ -29,3 +29,11 @@ function mostrarImagenes() {
     const introText = document.getElementById('Imagenes');
     introText.style.display = introText.style.display === 'none' ? 'block' : 'none';
 }
+function mostrarFormularios(){
+    const introText = document.getElementById('Formularios');
+    introText.style.display = introText.style.display === 'none' ? 'block' : 'none';
+}
+function mostrarSemantico(){
+    const introText = document.getElementById('Semantico');
+    introText.style.display = introText.style.display === 'none' ? 'block' : 'none';
+}

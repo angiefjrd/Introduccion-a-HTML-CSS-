@@ -100,7 +100,9 @@ div[id^="Encabezado"],
 div[id^="Listas"],
 div[id^="ListasDesordenadas"],
 div[id^="Enlaces"],
-div[id^="Imagenes"] {
+div[id^="Imagenes"],
+div[id^="Formularios"],
+div[id^="Semantico"] {
     background-color: #1e1e1e;
     color: #fff;
     padding: 20px;
@@ -120,7 +122,9 @@ div[id^="Encabezado"] pre,
 div[id^="Listas"] pre,
 div[id^="ListasDesordenadas"] pre,
 div[id^="Enlaces"] pre,
-div[id^="Imagenes"] pre {
+div[id^="Imagenes"] pre,
+div[id^="Formularios"] pre,
+div[id^="Semantico"] pre{
     background-color: #292929;
     padding: 15px;
     color: #b0b0b0;

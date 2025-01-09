@@ -102,7 +102,13 @@ div[id^="ListasDesordenadas"],
 div[id^="Enlaces"],
 div[id^="Imagenes"],
 div[id^="Formularios"],
-div[id^="Semantico"] {
+div[id^="Semantico"],
+div[id^="Ejemplo"],
+div[id^="Integracion"],
+div[id^="Selectores"],
+div[id^="Propiedades"],
+div[id^="Modelo"],
+div[id^="Elementos"] {
     background-color: #1e1e1e;
     color: #fff;
     padding: 20px;
@@ -124,7 +130,13 @@ div[id^="ListasDesordenadas"] pre,
 div[id^="Enlaces"] pre,
 div[id^="Imagenes"] pre,
 div[id^="Formularios"] pre,
-div[id^="Semantico"] pre{
+div[id^="Semantico"] pre,
+div[id^="Ejemplo"] pre,
+div[id^="Integracion"] pre,
+div[id^="Selectores"] pre,
+div[id^="Propiedades"] pre,
+div[id^="Modelo"] pre,
+div[id^="Elementos"] pre {
     background-color: #292929;
     padding: 15px;
     color: #b0b0b0;
@@ -134,7 +146,7 @@ div[id^="Semantico"] pre{
     font-size: 14px;
     margin: 10px auto; 
     max-width: 95%; 
-
+}
 .sidebar ul li a {
     text-align: center;
     transition: all 0.3s ease;

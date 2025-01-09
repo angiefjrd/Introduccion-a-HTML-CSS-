@@ -339,7 +339,105 @@
                 </div>
 
                 <h1>CSS</h1>
-                <p>lo de css</p>
+                <h2>Casding Style Sheets</h2>
+                <p>Ejemplo de la estructura basica de HTML con CSS</p>
+                <div id="Ejemplo" style="margin-top: 10px; border: 1px solid #ccc; padding: 10px;">
+                    <pre>
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html lang="en"&gt;
+                        &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initil-scale=1.0"&gt;
+                        &lt;head/&gt;
+                        &lt;body&gt;
+                        &lt;h1 style="color: blue; text-align: center;"&gt;Hola Mundo!&lt;/h1&gt;
+                        &lt;/body&gt;
+                        &lt;/html&gt; 
+                    </pre>
+                    <p>El codigo renderizado: </p>
+                    <h1 style="color: blue; text-align: center;">Hola Mundo!</h1>
+                </div>
+                <button onclick="mostrarIntegracion()">Integracion de CSS</button>
+                <div id="Integracion" style="display: none; margin-top: 10px; border: 1px solid #ccc; padding: 10px;">
+                    <h2>Formas de integrar el CSS en nuestro HTML</h2>
+                    <h3>1. CSS en linea</h3>
+                    <pre>
+                        &lt;p style="color: red; font-size: 16px;"&lg;Este parrafo tiene estilos en linea&lt;/p&gt;
+                    </pre>
+                    <p>El codigo renderizado:</p>
+                    <p style="color: red; font-size: 16px;">Este párrafo tiene estilos en línea.</p>
+
+                    <h3>2. CSS Interno</h3>
+                    <pre>
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html&gt;
+                        &lt;head&gt;
+                            &lt;title&gt;Ejemplo de CSS interno&lt;/title&gt;
+                            &lt;style&gt;
+                                p {
+                                  color: green;
+                                  font-family: Arial; 
+                                } 
+                             &lt;/style&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                            &lt;p&gt;Este párrafo tiene estilos internos.&lt;/p&gt;
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                    </pre>
+                    <p>El codigo renderizado:</p>
+                    <p style = "color: green; font-family: Arial;"> Este parrafo tiene estilos internos</p>
+
+                    <h3>3. CSS externo</h3>
+                    <p>Codigo del archivo .css</p>
+                    <pre>
+                        body {
+                            background-color: lightblue;
+                        }
+                        h1 {
+                            color: navy;
+                            margin-left: 20px;
+                        }
+                    </pre>
+                    <p>Codigo del archivo .html</p>
+                    <pre>
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html&gt;
+                        &lt;head&gt;
+                            &lt;title&gt;Ejemplo de CSS externo&lt;/title&gt;
+                            &lt;link rel="stylesheet" href="style.css"&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                            &lt;h1&gt;Este es un título&lt;/h1&gt;
+                            &lt;p&gt;Este párrafo utiliza estilos de un archivo externo.&lt;/p&gt;
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                    </pre>
+                    <p>El codigo renderizado:</p>
+                    <h1 style="color: navy; margin-left: 20px;">Este es un titulo</h1>
+                    <p style="background-color: lightblue">Este párrafo utiliza estilos de un archivo externo.</p>
+                </div>
+                <button onclick="mostrarSelectores()">Selectores</button>
+                <div id="Selectores" style="display: none; margin-top: 10px; border: 1px solid #ccc; padding: 10px;">
+
+                </div>
+                <button onclick="mostrarPropiedades()">Propiedades de texto y fuentes</button>
+                <div id="Propiedades" style="display: none; margin-top: 10px; border: 1px solid #ccc; padding: 10px;">
+
+                </div>
+                <button onclick="mostrarModelo()">Modelo de caja</button>
+                <div id="Modelo" style="display: none; margin-top: 10px; border: 1px solid #ccc; padding: 10px;">
+
+                </div>
+                <button onclick="mostrarElementos()">Integracion de CSS</button>
+                <div id="Elementos" style="display: none; margin-top: 10px; border: 1px solid #ccc; padding: 10px;">
+
+                </div>
+                    
+                    
+                    
+                    
+
             </section>
         </div>
         

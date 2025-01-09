@@ -37,3 +37,23 @@ function mostrarSemantico(){
     const introText = document.getElementById('Semantico');
     introText.style.display = introText.style.display === 'none' ? 'block' : 'none';
 }
+function mostrarIntegracion(){
+    const introText = document.getElementById('Integracion');
+    introText.style.display = introText.style.display === 'none' ? 'block' : 'none';
+}
+function mostrarSelectores(){
+    const introText = document.getElementById('Selectores');
+    introText.style.display = introText.style.display === 'none' ? 'block' : 'none';
+}
+function mostrarPropiedades(){
+    const introText = document.getElementById('Propiedades');
+    introText.style.display = introText.style.display === 'none' ? 'block' : 'none';
+}
+function mostrarModelo(){
+    const introText = document.getElementById('Modelo');
+    introText.style.display = introText.style.display === 'none' ? 'block' : 'none';
+}
+function mostrarElementos(){
+    const introText = document.getElementById('Elementos');
+    introText.style.display = introText.style.display === 'none' ? 'block' : 'none';
+}

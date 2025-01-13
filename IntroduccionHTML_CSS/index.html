@@ -362,10 +362,11 @@
                     <h2>Formas de integrar el CSS en nuestro HTML</h2>
                     <h3>1. CSS en linea</h3>
                     <pre>
-                        &lt;p style="color: red; font-size: 16px;"&lg;Este parrafo tiene estilos en linea&lt;/p&gt;
+        &lt;p style="color: red; font-size: 16px;"&lg;Este parrafo tiene estilos en linea&lt;/p&gt;
                     </pre>
                     <p>El codigo renderizado:</p>
                     <p style="color: red; font-size: 16px;">Este párrafo tiene estilos en línea.</p>
+                    <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
 
                     <h3>2. CSS Interno</h3>
                     <pre>
@@ -387,17 +388,18 @@
                     </pre>
                     <p>El codigo renderizado:</p>
                     <p style = "color: green; font-family: Arial;"> Este parrafo tiene estilos internos</p>
+                    <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
 
                     <h3>3. CSS externo</h3>
                     <p>Codigo del archivo .css</p>
                     <pre>
-                        body {
-                            background-color: lightblue;
-                        }
-                        h1 {
-                            color: navy;
-                            margin-left: 20px;
-                        }
+                                    body {
+                                        background-color: lightblue;
+                                    }
+                                    h1 {
+                                        color: navy;
+                                        margin-left: 20px;
+                                    }
                     </pre>
                     <p>Codigo del archivo .html</p>
                     <pre>
@@ -419,10 +421,153 @@
                 </div>
                 <button onclick="mostrarSelectores()">Selectores</button>
                 <div id="Selectores" style="display: none; margin-top: 10px; border: 1px solid #ccc; padding: 10px;">
+                    <h3>1. Por Elemento:</h3>
+                    <pre>
+                                    p { 
+                                        color: blue;
+                                        font-size: 16px;
+                                    }
+                    </pre>
+                    <P>El codigo renderizado:</P>
+                    <p style="color: blue; font-size: 16px;">Ejemplo de selectores por elemento</p>
+                    <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
 
+                    <h3>2. Por Clases:</h3>
+                    <p>Codigo del archivo .html</p>
+                    <pre>
+                                &lt;div class="clase1"&gt; 
+                                &lt;p&gt;Ejemplo de selectores por clases&lt;/p&gt;
+                                &lt;/div&gt;
+                    </pre>
+                    <p>Codigo del archivo .css</p>
+                    <pre>
+                                .clase1 {
+                                    background-color: yellow;
+                                    padding: 10px;
+                                }
+                    </pre>
+                    <p>El codigo renderizado: </p>
+                    <p style="background-color: grey; padding: 10px;">Ejemplo de selectores por clases</p>
+                    <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
+
+                    <h3>3. Por ID:</h3>
+                    <p>Codigo en el archivo .html</p>
+                    <pre>
+                        &lt;div id="cabecera"&gt;
+                            &lt;h1&gt;Título principal&lt;/h1&gt;
+                        &lt;/div&gt;
+                        &lt;p id="parrafo-principal"&gt; Este es el párrafo principal.&lt;/p&gt;
+                    </pre>
+                    <p>Codigo en el archivo .css</p>
+                    <pre>
+                                    #cabecera {
+                                        background-color: lightgray;
+                                        text-align: center;
+                                    }
+                                    
+                                    #parrafo-principal {
+                                        font-style: italic;
+                                    }
+                    </pre>
+                    <p>El codigo renderizado: </p>
+                    <h1 style="background-color: lightgray; text-align: center;"> Titulo Principal </h1>
+                    <p style="font-style: italic;"> Este es el parrafo principal </p>
+                    <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
                 </div>
                 <button onclick="mostrarPropiedades()">Propiedades de texto y fuentes</button>
                 <div id="Propiedades" style="display: none; margin-top: 10px; border: 1px solid #ccc; padding: 10px;">
+                    <h3>color</h3>
+                    <pre>
+                        &lt;p style= "color: #FF0000;"&gt;Ejemplo de color&lt;/p&gt;
+                       
+                        &lt;p style= "color: red;"&gt;Ejemplo de color&lt;/p&gt;
+                       
+                        &lt;p style= "color: rgb(255, 0, 0);"&gt;Ejemplo de color&lt;/p&gt;
+                    </pre>
+                    <p>El codigo renderizado:</p>
+                    <p style="color: #FF0000;">Ejemplo de color</p>
+                    <p style="color: red;">Ejemplo de color</p>
+                    <p style="color: rgb(255, 0, 0);">Ejemplo de color</p>
+                    <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
+
+                    <h3>font-family</h3>
+                    <pre>
+         &lt;h1 style="font-family: "Arial", "Helvetica", sans-serif;"&gt;Ejemplo de font-family&lt;/h1&gt;
+                    </pre>
+                    <p>El codigo renderizado: </p>
+                    <h4 style="font-family: Arial, Helvetica, sans-serif;">Ejemplo de font-family</h1>
+                    <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
+
+                    <h3>font-size</h3>
+                    <pre>
+                        &lt;h2 style= "font-size: 16px"&gt; Ejemplo de font-size &lt;/h2&gt;
+
+                        &lt;h2 style= "font-size: 1.2em"&gt; Ejemplo de font-size &lt;/h2&gt;
+
+                        &lt;h2 style= "font-size: 100%"&gt; Ejemplo de font-size &lt;/h2&gt;
+                    </pre>
+                    <p>El codigo renderizado: </p>
+                    <h2 style="font-size: 16px;">Ejemplo de font-size</h2>
+                    <h2 style="font-size: 1.2em;">Ejemplo de font-size</h2>
+                    <h2 style="font-size: 100%;">Ejemplo de font-size</h2>
+                    <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
+
+                    <h3>font-weight</h3>
+                    <pre>
+                        &lt;h2 style="font-weight: bold;"&gt;Ejemplo de font-weight&lt;/h2&gt;
+
+                        &lt;h2 style="font-weight: 700;"&gt;Ejemplo de font-weight&lt;/h2&gt;
+                    </pre>
+                    <p>El codigo renderizado: </p>
+                    <h4 style="font-weight: bold;">Ejemplo de font-weight</h2>
+                    <h4 style="font-weight: 700;">Ejemplo de font-weight</h2>
+                    <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
+
+
+                    <h3>font-style</h3>
+                    <pre>
+                        &lt;h4 style="font-style: italic"&lt;Ejemplo de font-style&lt;/h2&gt;
+
+                        &lt;h4 style="font-style: oblique"&lt;Ejemplo de font-style&lt;/h2&gt;
+                    </pre>
+                    <p>El codigo renderizado: </p>
+                    <h4 style="font-style: italic">Ejemplo de font-style</h4>
+                    <h4 style="font-style: oblique">Ejemplo de font-style</h4>
+                    <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
+
+                    <h3>text-aling</h3>
+                    <pre>
+                        &lt;h4 style="text-align: center;"&gt;Ejemplo de text-aling&lt;/h4&gt;
+
+                        &lt;h4 style="text-align: right;"&gt;Ejemplo de text-aling&lt;/h4&gt;
+
+                        &lt;h4 style="text-align: left;"&gt;Ejemplo de text-aling&lt;/h4&gt;
+
+                        &lt;h4 style="text-align: justify;"&gt;Ejemplo de text-aling&lt;/h4&gt;
+                    </pre>
+                    <p>El codigo renderizado: </p>
+                    <h4 style="text-align: center;">Ejemplo de text-aling</h4>
+                    <h4 style="text-align: right;">Ejemplo de text-aling</h4>
+                    <h4 style="text-align: left;">Ejemplo de text-aling</h4>
+                    <h4 style="text-align: justify;">Ejemplo de text-aling</h4>
+                    <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
+
+                    <h3>text-decoration</h3>
+                    <pre>
+            &lt;h4 style="text-decoration: underline;"&gt;Ejemplo de text-decoration&lt;/h4&gt;
+
+            &lt;h4 style="text-decoration: none;"&gt;Ejemplo de text-decoration&lt;/h4&gt;
+
+            &lt;h4 style="text-decoration: overline;"&gt;Ejemplo de text-decoration&lt;/h4&gt;
+            
+            &lt;h4 style="text-decoration: line-through;"&gt;Ejemplo de text-decoration&lt;/h4&gt;
+                    </pre>
+                    <p>El codigo renderizado: </p>
+                    <h4 style="text-decoration: underline;">Ejemplo de text-decoration</h4>
+                    <h4 style="text-decoration: none;">Ejemplo de text-decoration</h4>
+                    <h4 style="text-decoration: overline;">Ejemplo de text-decoration</h4>
+                    <h4 style="text-decoration: line-through;">Ejemplo de text-decoration</h4>
+
 
                 </div>
                 <button onclick="mostrarModelo()">Modelo de caja</button>

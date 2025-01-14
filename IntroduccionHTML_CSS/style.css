@@ -108,7 +108,9 @@ div[id^="Integracion"],
 div[id^="Selectores"],
 div[id^="Propiedades"],
 div[id^="Modelo"],
-div[id^="Elementos"] {
+div[id^="Elementos"],
+div[id^="Div"],
+div[id^="Widht"] {
     background-color: #1e1e1e;
     color: #fff;
     padding: 20px;
@@ -136,7 +138,9 @@ div[id^="Integracion"] pre,
 div[id^="Selectores"] pre,
 div[id^="Propiedades"] pre,
 div[id^="Modelo"] pre,
-div[id^="Elementos"] pre {
+div[id^="Elementos"] pre,
+div[id^="Div"] pre,
+div[id^="Widht"] pre {
     background-color: #292929;
     padding: 15px;
     color: #b0b0b0;

@@ -567,8 +567,51 @@
                     <h4 style="text-decoration: none;">Ejemplo de text-decoration</h4>
                     <h4 style="text-decoration: overline;">Ejemplo de text-decoration</h4>
                     <h4 style="text-decoration: line-through;">Ejemplo de text-decoration</h4>
+                </div>
+                <button onclick="mostrarDiv()">Div</button>
+                <div id="Div" style="display: none; margin-top: 10px; border: 1px solid #ccc; padding: 10px;">
+                    <h3>Div</h3>
+                    <p>Codigo del archivo .html</p>
+                    <pre>
+                        &lt;div id="mi-div"&gt;
+                            Este es un div por defecto.
+                        &lt;/div&gt;
+                    </pre>    
+                    <p>El codigo renderizado: </p>
+                    <p>Este es un div por defecto.</p>
+                </div>
+                <button onclick="mostrarWidht()">Width y Height</button>
+                <div id="Widht" style="display: none; margin-top: 10px; border: 1px solid #ccc; padding: 10px;">
+                    <h3>Valores Absolutos</h3>
+                    <p>- Pixeles: </p>
+                    <p>width: 200px</p>
+                    <p>- Otras unidades: </p>
+                    <p>cm, mm, in, pt, pc</p>
 
+                    <h3>Valores Relativos: </h3>
+                    <p>width: 50%;</p>
+                    <p>width: 10em;</p>
+                    <p>width: 10rem;</p>
+                    <p>vm (viewport width)</p>
+                    <p>vh (viewport height)</p>
 
+                    <h3>auto</h3>
+                    <p>Valor por defecto.</p>
+
+                    <p>Sintaxis: </p>
+                    <pre>
+                                    #mi-div {
+                                        width: 300px;
+                                        height: 150px;
+                                        background-color: lightblue;
+                                    }
+                    </pre>
+                    <p>El codigo renderizado: </p>
+                    <div id="mi-div" style="width: 300px; height: 150px; background-color: gray; margin: 10px auto; ">
+                        <p>Este es un div con valores definidos.</p>
+                    </div>
+
+                    
                 </div>
                 <button onclick="mostrarModelo()">Modelo de caja</button>
                 <div id="Modelo" style="display: none; margin-top: 10px; border: 1px solid #ccc; padding: 10px;">

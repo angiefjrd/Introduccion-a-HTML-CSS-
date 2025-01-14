@@ -57,3 +57,11 @@ function mostrarElementos(){
     const introText = document.getElementById('Elementos');
     introText.style.display = introText.style.display === 'none' ? 'block' : 'none';
 }
+function mostrarDiv(){
+   const introText = document.getElementById('Div');
+    introText.style.display = introText.style.display === 'none' ? 'block' : 'none';
+}
+function mostrarWidht(){
+    const introText = document.getElementById('Widht');
+     introText.style.display = introText.style.display === 'none' ? 'block' : 'none';
+ }

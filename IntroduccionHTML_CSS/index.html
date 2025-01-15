@@ -441,10 +441,10 @@
                     </pre>
                     <p>Codigo del archivo .css</p>
                     <pre>
-                                .clase1 {
-                                    background-color: yellow;
-                                    padding: 10px;
-                                }
+                                    .clase1 {
+                                        background-color: yellow;
+                                        padding: 10px;
+                                    }
                     </pre>
                     <p>El codigo renderizado: </p>
                     <p style="background-color: grey; padding: 10px;">Ejemplo de selectores por clases</p>
@@ -573,9 +573,9 @@
                     <h3>Div</h3>
                     <p>Codigo del archivo .html</p>
                     <pre>
-                        &lt;div id="mi-div"&gt;
-                            Este es un div por defecto.
-                        &lt;/div&gt;
+                                    &lt;div id="mi-div"&gt;
+                                        Este es un div por defecto.
+                                    &lt;/div&gt;
                     </pre>    
                     <p>El codigo renderizado: </p>
                     <p>Este es un div por defecto.</p>
@@ -587,6 +587,7 @@
                     <p>width: 200px</p>
                     <p>- Otras unidades: </p>
                     <p>cm, mm, in, pt, pc</p>
+                    <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
 
                     <h3>Valores Relativos: </h3>
                     <p>width: 50%;</p>
@@ -594,6 +595,7 @@
                     <p>width: 10rem;</p>
                     <p>vm (viewport width)</p>
                     <p>vh (viewport height)</p>
+                    <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
 
                     <h3>auto</h3>
                     <p>Valor por defecto.</p>
@@ -609,23 +611,187 @@
                     <p>El codigo renderizado: </p>
                     <div id="mi-div" style="width: 300px; height: 150px; background-color: gray; margin: 10px auto; ">
                         <p>Este es un div con valores definidos.</p>
-                    </div>
-
-                    
+                    </div>    
                 </div>
                 <button onclick="mostrarModelo()">Modelo de caja</button>
                 <div id="Modelo" style="display: none; margin-top: 10px; border: 1px solid #ccc; padding: 10px;">
+                    <h3>Contend:</h3>
+                    <p>Es el área donde se muestra el contenido real del elemento, como texto, 
+                        imagenes u otros elementos HTML. </p>
+                                    <pre>
+                                        &lt;h2&gt; Titulo &lt;/h2&gt;
+                                    </pre>
+                    <p>El codigo renderizado: </p>
+                    <h2>Titulo</h2>
+                    <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
+        
+                    <h3>Padding</h3>
+                    <pre>
+                                        h2 {
+                                            padding-top: 10px;
+                                            padding-right: 20px;
+                                            padding-bottom: 15px;
+                                            padding-left: 5px;   
+                                        }
+                    </pre>
+                    <p>Asi se le da el padding a un elemento definiendo cada una de sus direcciones</p>
+                    <pre>
+                                        h2 {
+                                            padding: 10px 20px 15px 5px;
+                                        }
+                    </pre>
+                    <p>El codigo renderizado: </p>
+                    <h2 style="padding: 10px 20px 15px 5px; background-color: grey;"> Titulo </h2>
+                    <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
 
+                    <h3>Border</h3>
+                    <pre>
+                                        h2 {
+                                            border-width: 3px;
+                                            border-style: solid;
+                                            border-color: red;
+                                        }
+                    </pre>
+                    <p>Asi se establece el ancho, stilo y color del borde.</p>
+                    <pre>
+                                        h2 {
+                                            border: 3px solid red;
+                                        }
+                    </pre>
+                    <p>El codigo renderizado: </p>
+                    <h2 style="padding: 10px 20px 15px 5px; background-color: grey; border: 3px solid red">Titulo</h2>
+                    <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
+
+                    <h3>Margin</h3>
+                    <pre>
+                                        h2 {
+                                            margin-top: 5px;
+                                            margin-right: 5px;
+                                            margin-left: 5px;
+                                            margin-bottom: 5px;
+                                        }
+                    </pre>
+                    <p>Asi se establecen las propiedades del margin.</p>
+                    <pre>
+                                        h2 {
+                                            margin: 10px 20px 15px 5px;
+                                        }
+                    </pre>
+                    <p>El codigo renderizado: </p>
+                    <h2 style="padding: 10px 20px 15px 5px; background-color: grey; border: 3px solid red; margin: 10px 20px 15px 5px">Titulo</h2>
+
+                    
+                </div>
+                <button onclick="mostrarBoxSizing()">Box-sizing</button>
+                <div id="Box-sizing" style="display: none; margin-top: 10px; border: 1px solid #ccc; padding: 10px;"> 
+                    <h3>1. content-box: </h3>
+                    <pre>
+                                div {
+                                    width: 200px;
+                                    height: 100px;
+                                    padding: 20px;
+                                    border: 5px solid black;
+                                    box-sizing: content-box;
+                                    background-color: gray;
+                                }
+                    </pre>
+                    <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
+                    
+                    <h3>2. border-box: </h3>
+                    <pre>
+                                div {
+                                    width: 200px;
+                                    height: 100px;
+                                    padding: 20px;
+                                    margin-top: 10px;
+                                    border: 5px solid black;
+                                    box-sizing: border-box;
+                                    background-color: gray;
+                                }
+                    </pre>
+                    <p>El codigo renderizado: </p>
+                    <div style="width: 200px; height: 100px; padding: 20px; border: 5px solid black; box-sizing: content-box; background-color: grey;">
+
+                    </div>
+
+                    <div style="width: 200px; height: 100px; padding: 20px; border: 5px solid black; margin-top: 10px; box-sizing: border-box; background-color: grey;">
+                        
+                    </div>
+                    
                 </div>
                 <button onclick="mostrarElementos()">Elementos de bloque y linea</button>
                 <div id="Elementos" style="display: none; margin-top: 10px; border: 1px solid #ccc; padding: 10px;">
+                    <h3>Elementos en bloque</h3>
+                    <p>Ocupan todo el ancho disponible, cada elemento del bloque 
+                        comienza en una nueva linea 
+                        apilandose verticalmente uno debajo del otro</p>
+                    <pre>
+                        &lt;div&gt;, &lt;p&gt;, &lt;h1&gt;, &lt;h6&gt;, &lt;form&gt;, &lt;header&gt;, &lt;footer&gt;, 
+                   &lt;srection&gt;, &lt;article&gt;, &lt;nav&gt;, &lt;aside&gt;, &lt;addres&gt;, &lt;ol&gt;, &lt;ul&gt;, &lt;dl&gt;.
+                    </pre>
+                    <p>Los elementos renderizados se visualizarian asi:  </p>
+                    <p>El elemento p: </p>
+                    <p style="background-color: grey;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem tempora hic fuga quae! Ratione totam ab 
+                        atque non voluptatem maiores placeat accusantium, cumque incidunt qui</p>
+                    <p>El elemento h1: </p>
+                    <h1 style="background-color: grey;">Titulo</h1>
+                    <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
+
+                    <h3>Elementos en linea</h3>
+                    <p>Solo ocupan el espacio necesario, no comienzan en una nueva linea, 
+                        no se puede definir explicitamente el ancho y largo y solo aceptan margenes y rellenos horizontales.</p>
+                    <pre>
+            &lt;a&gt;, &lt;spam&gt;, &lt;img&gt;, &lt;strong&gt;, &lt;em&gt;, &lt;br&gt;, &lt;input&gt;, &lt;label&gt;, &lt;select&gt;, &lt;textarea&gt;.
+                    </pre>
+                    <p>Los elementos renderizados se visualizarian asi:  </p>
+                    <p>El elemeto a: </p>
+                    <a style="background-color: grey;">Youtube</a>
+                    <p>El elemento input: </p>
+                    <input type="text" placeholder="Nombre">
+                    
+                </div>
+                <button onclick="mostrarDisplay()">Display</button>
+                <div id="Display" style="display: none; margin-top: 10px; border: 1px solid #ccc; padding: 10px;">
+                    <h3>Display: block</h3>
+                    <p>Convierte un elemento en un elemento de bloque.</p>
+                    <p>Renderizado:</p>
+                    <p>Elemento a: </p>
+                    <a style="background-color: grey; display: block;">Youtube</a>
+                    <p>Se tomo el elemento a y se cambio de inline a block.</p>
+                    <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
+
+                    <h3>display: inline</h3>
+                    <p>Convierte un elemento en un elemento en linea.</p>
+                    <p>Renderizado:</p>
+                    <p>Elemento p: </p>
+                    <p style="background-color: grey; display: inline;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem tempora hic fuga quae! Ratione totam ab 
+                        atque non voluptatem maiores placeat accusantium, cumque incidunt qui</p>
+                    <p>Se tomo el elemeto p y se cambio de block a inline</p>
+                    <p>Elemento h1</p>
+                    <h1 style="background-color: grey; display: inline;">Titulo</h1>
+                    <p>Se tomo el elemeto h1 y se cambio de block a inline</p>
+                    <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
+                    
+                    <h3>display inline-block</h3>
+                    <p>Combina caracteristicas de ambos.</p>
+                    <p>Renederizado: </p>
+                    <p>Elemento h</p>
+                    <h2 style="background-color: grey; display: inline-block;">Encabezado</h2>
+                    <p>Se toma el elemento en bloque y se le da la propiedad inline-block, para que conserve las propiedades de un elemento en bloque
+                        y tambien las propiedades de un elemento en linea.</p>
+                    <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
+                    
+                    <h3>display none</h3>
+                    <p>Oculta totalmente el elemento.</p>
+                    <p>Renderizado: </p>
+                    <p>Elemento h2:</p>
+                    <h2 style="background-color: grey; display: none;">Encabezado</h2>
+                    <p>Se tomo un elemento h2, se le dio la propiedad display: none y desaparecio.</p>
 
                 </div>
-                    
-                    
-                    
-                    
+                
 
+                           
             </section>
         </div>
         

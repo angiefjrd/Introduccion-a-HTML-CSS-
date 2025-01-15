@@ -65,3 +65,12 @@ function mostrarWidht(){
     const introText = document.getElementById('Widht');
      introText.style.display = introText.style.display === 'none' ? 'block' : 'none';
  }
+ function mostrarBoxSizing(){
+    const introText = document.getElementById('Box-sizing');
+     introText.style.display = introText.style.display === 'none' ? 'block' : 'none';
+ }
+ function mostrarDisplay(){
+    const introText = document.getElementById('Display');
+     introText.style.display = introText.style.display === 'none' ? 'block' : 'none';
+ }
+ 

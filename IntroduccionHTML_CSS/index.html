@@ -10,7 +10,7 @@
     <div class="container">
         <!-- Menú lateral con una seccion para html y otro para css -->
         <div class="sidebar" style="position: fixed; top: 0; left: 0; width: 200px; height: 100%; border-right: 1px solid #ccc; padding: 10px;">
-            <h3>Índice</h3>
+            <h3 style="text-align: center; margin-top: 100px;">I N D I C E</h3>
             <ul>
                 <li><a href="#" onclick="mostrarSeccion('html-section')">HTML</a></li>
                 <li><a href="#" onclick="mostrarSeccion('css-section')">CSS</a></li>
@@ -19,23 +19,23 @@
 
         
         <div id="content" style="margin-left: 210px; padding: 20px;">
-            <section id="html-section" style="display: none;">
+            <section id="html-section">
                 <h1>HTML</h1>
                 <p>HTML (Hipertext Markup Language)</p>
                 <p>Vamos a empezar escribiendo un archivo de HTML simple!</p>
                 <button onclick="mostrarIntroduccion()">Introducción</button>
                 <div id="intro-text" style="display: none; margin-top: 10px; border: 1px solid #ccc; padding: 10px;">
                     <pre>
-                        &lt;!DOCTYPE html&gt;
-                        &lt;html lang="en"&gt;
-                        &lt;head&gt;
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+                    &lt;head&gt;
                         &lt;meta charset="UTF-8"&gt;
                         &lt;meta name="viewport" content="width=device-width, initil-scale=1.0"&gt;
-                        &lt;head/&gt;
-                        &lt;body&gt;
+                    &lt;head/&gt;
+                    &lt;body&gt;
                         &lt;h1&gt;Hola Mundo!&lt;/h1&gt;
-                        &lt;/body&gt;
-                        &lt;/html&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
                     </pre>
                 
                     <p><strong>Nota:</strong> Siempre guarda tu archivo con la extension <code>.html</code> y abrelo en tu navegador para verlo funcionar.</p> 
@@ -46,21 +46,21 @@
                 <div id="Encabezado" style="display: none; margin-top: 10px; border: 1px solid #ccc; padding: 10px;">
                    <h2>Encabezados</h2>
                     <pre>
-                        &lt;!DOCTYPE html&gt;
-                        &lt;html lang="en"&gt;
-                        &lt;head&gt;
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+                    &lt;head&gt;
                         &lt;meta charset="UTF-8"&gt;
                         &lt;meta name="viewport" content="width=device-width, initil-scale=1.0"&gt;
-                        &lt;head/&gt;
-                        &lt;body&gt;
+                    &lt;head/&gt;
+                    &lt;body&gt;
                         &lt;h1&gt;Encabezado 1&lt;/h1&gt;
                         &lt;h2&gt;Encabezado 2&lt;/h2&gt;
                         &lt;h3&gt;Encabezado 3&lt;/h3&gt;
                         &lt;h4&gt;Encabezado 4&lt;/h4&gt;
                         &lt;h5&gt;Encabezado 5&lt;/h5&gt;
                         &lt;h6&gt;Encabezado 6&lt;/h6&gt;
-                        &lt;/body&gt;
-                        &lt;/html&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
                     </pre>
                     <p><strong>Nota:</strong> de esta forma ingresamos parrafos</p> 
                     <p>EL codigo renderizado se mostraria en el navegador asi: </p> 
@@ -74,18 +74,18 @@
                    
                     <h2>Parrafos</h2>
                     <pre>
-                        &lt;!DOCTYPE html&gt;
-                        &lt;html lang="en"&gt;
-                        &lt;head&gt;
-                        &lt;meta charset="UTF-8"&gt;
-                        &lt;meta name="viewport" content="width=device-width, initil-scale=1.0"&gt;
-                        &lt;head/&gt;
-                        &lt;body&gt;
-                        &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Aperiam non quisquam fuga doloribus maiores ex magnam consequatur autem culpa 
-                        deleniti esse nemo quo earum, facilis, laboriosam odit? Repudiandae, eum eveniet.&lt;/p&gt;
-                        &lt;/body&gt;
-                        &lt;/html&gt;
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initil-scale=1.0"&gt;
+        &lt;head/&gt;
+        &lt;body&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Aperiam non quisquam fuga doloribus maiores ex magnam consequatur autem culpa 
+            deleniti esse nemo quo earum, facilis, laboriosam odit? Repudiandae, eum eveniet.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
                     </pre>
                     <p>EL codigo renderizado se mostraria en el navegador asi: </p> 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam non quisquam fuga doloribus maiores ex magnam consequatur autem culpa deleniti esse nemo quo earum, facilis, laboriosam odit? Repudiandae, eum eveniet.</p> 
@@ -95,13 +95,13 @@
                 <div id="Listas" style="display: none; margin-top: 10px; border: 1px solid #ccc; padding: 10px;">
                     <h2>Listas Ordenadas</h2> 
                     <pre>
-                        &lt;!DOCTYPE html&gt;
-                        &lt;html lang="en"&gt;
-                        &lt;head&gt;
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+                    &lt;head&gt;
                         &lt;meta charset="UTF-8"&gt;
                         &lt;meta name="viewport" content="width=device-width, initil-scale=1.0"&gt;
-                        &lt;head/&gt;
-                        &lt;body&gt;
+                    &lt;head/&gt;
+                    &lt;body&gt;
                         &lt;ol&gt;
                             &lt;li&gt;Brasil&lt;/li&gt;
                             &lt;li&gt;Alemania&lt;/li&gt;
@@ -112,8 +112,8 @@
                             &lt;li&gt;Inglaterra&lt;/li&gt;
                             &lt;li&gt;España&lt;/li&gt;
                         &lt;/ol&gt;
-                        &lt;/body&gt;
-                        &lt;/html&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
                     </pre>
                 <p><strong>Nota:</strong> Siempre guarda tu archivo con la extension <code>.html</code> y abrelo ebn tu navegador para verlo funcionar.</p> 
                 <p>EL codigo renderizado se mostraria en el navegador asi: </p> 
@@ -133,13 +133,13 @@
                 <div id="ListasDesordenadas" style="display: none; margin-top: 10px; border: 1px solid #ccc; padding: 10px;">
                     <h2>Listas Desordenadas</h2>
                     <pre>
-                        &lt;!DOCTYPE html&gt;
-                        &lt;html lang="en"&gt;
-                        &lt;head&gt;
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+                    &lt;head&gt;
                         &lt;meta charset="UTF-8"&gt;
                         &lt;meta name="viewport" content="width=device-width, initil-scale=1.0"&gt;
-                        &lt;head/&gt;
-                        &lt;body&gt;
+                    &lt;head/&gt;
+                    &lt;body&gt;
                         &lt;ul&gt;
                             &lt;li&gt;&lt;/li&gt;
                             &lt;li&gt;Inicio&lt;/li&gt;
@@ -148,8 +148,8 @@
                             &lt;li&gt;Servicios&lt;/li&gt;
                             &lt;li&gt;Contacto&lt;/li&gt;
                         &lt;/ul&gt;
-                        &lt;/body&gt;
-                        &lt;/html&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
                     </pre>
                     <p>EL codigo renderizado se mostraria en el navegador asi: </p> 
                 <ul>
@@ -166,31 +166,31 @@
                     <h2>Enlaces</h2>
                     <h3>Sintaxis para enlaces externos</h3>
                     <pre>
-                        &lt;!DOCTYPE html&gt;
-                        &lt;html lang="en"&gt;
-                        &lt;head&gt;
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+                    &lt;head&gt;
                         &lt;meta charset="UTF-8"&gt;
                         &lt;meta name="viewport" content="width=device-width, initil-scale=1.0"&gt;
-                        &lt;head/&gt;
-                        &lt;body&gt;
+                    &lt;head/&gt;
+                    &lt;body&gt;
                         &lt;a&gt;href="https://www.youtube.com">Youtube&lt;/a&gt;
-                        &lt;/body&gt;
-                        &lt;/html&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
                     </pre> 
                     <p>El codigo renderizado se mostraria en el navegador asi: </p>  
                     <a href="https://www.youtube.com">Youtube</a>
                     <h3>Sintaxis para enlaces Internos</h3> 
                     <pre>
-                        &lt;!DOCTYPE html&gt;
-                        &lt;html lang="en"&gt;
-                        &lt;head&gt;
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+                    &lt;head&gt;
                         &lt;meta charset="UTF-8"&gt;
                         &lt;meta name="viewport" content="width=device-width, initil-scale=1.0"&gt;
-                        &lt;head/&gt;
-                        &lt;body&gt;
+                    &lt;head/&gt;
+                    &lt;body&gt;
                         &lt;a&gt;href="./Inicio.html">Inicio&lt;/a&gt;
-                        &lt;/body&gt;
-                        &lt;/html&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
                     </pre>
                
                 </div>
@@ -199,16 +199,16 @@
                 <div id="Imagenes" style="display: none; margin-top: 10px; border: 1px solid #ccc; padding: 10px;">
                     <h2>Insertando Imagenes</h2> 
                     <pre>
-                        &lt;!DOCTYPE html&gt;
-                        &lt;html lang="en"&gt;
-                        &lt;head&gt;
-                        &lt;meta charset="UTF-8"&gt;
-                        &lt;meta name="viewport" content="width=device-width, initil-scale=1.0"&gt;
-                        &lt;head/&gt;
-                        &lt;body&gt;
-                            &lt;img src=https://via.placeholder.com/200 alt="Descripcion de la imagen"&gt;
-                        &lt;/body&gt;
-                        &lt;/html&gt;
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="en"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initil-scale=1.0"&gt;
+                &lt;head/&gt;
+                &lt;body&gt;
+                    &lt;img src=https://via.placeholder.com/200 alt="Descripcion de la imagen"&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
                     </pre>
                 <p><strong>Nota:</strong> podemos ingresar imagenes de manera local o mediante url.</p> 
                 <p>EL codigo renderizado se mostraria en el navegador asi: </p>
@@ -219,21 +219,22 @@
                 <div id="Formularios" style="display: none; margin-top: 10px; border: 1px solid #ccc; padding: 10px;">
                     <h2>Sintaxis para insertar un formulario.</h2>
                     <pre>
-                        &lt;!Doctype hml&gt;   
-                        &lt;html lang="en"&gt; 
-                        &lt;head&gt; 
-                        &lt;body&gt; 
-                        &lt;form&gt; 
-                            &lt;input type="text" placeholder="First Name" name="first"&gt; 
-                            &lt;input type="password" placeholder="Password" name="password"&gt; 
-                            &lt;div&gt; 
-                                &lt;Favorite Color:<input name="color" type="radio" value="blue"> Blue&gt; 
-                                &lt;input name="color" type="radio" value="green"> Green&gt; 
-                                &lt;input name="color" type="radio" value="yellow"> Yellow&gt; 
-                            &lt;input type="submit"&gt;
-                        &lt;/form&gt;
-                        &lt;/body&gt;
-                        &lt;/html&gt;
+                &lt;!Doctype hml&gt;   
+                &lt;html lang="en"&gt; 
+                &lt;head&gt; 
+                &lt;/head&gt;
+                &lt;body&gt; 
+                    &lt;form&gt; 
+                        &lt;input type="text" placeholder="First Name" name="first"&gt; 
+                        &lt;input type="password" placeholder="Password" name="password"&gt; 
+                        &lt;div&gt; 
+                            &lt;Favorite Color:<input name="color" type="radio" value="blue"> Blue&gt; 
+                            &lt;input name="color" type="radio" value="green"> Green&gt; 
+                            &lt;input name="color" type="radio" value="yellow"> Yellow&gt; 
+                        &lt;input type="submit"&gt;
+                    &lt;/form&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
                     </pre>
                     <p>EL codigo renderizado se mostraria en el navegador asi: </p>
                     <form>
@@ -253,17 +254,17 @@
                     <h2>HTML Semantico</h2>
                     <h3>Sintaxis de la etiqueta header</h3>
                     <pre>
-                        &lt;body&gt;
-                        &lt;header&gt;&lt;/header&gt;
-                        &lt;/body&gt;
+                                        &lt;body&gt;
+                                            &lt;header&gt;&lt;/header&gt;
+                                        &lt;/body&gt;
                     </pre>
                     <h3>Sintaxis de la etiqueta nav</h3>
                     <pre>
-                        &lt;body&gt;
-                        &lt;header&gt;
-                        &lt;nav&gt;&lt;/nav&gt;
-                        &lt;/header&gt;
-                        &lt;/body&gt;
+                                        &lt;body&gt;
+                                            &lt;header&gt;
+                                                &lt;nav&gt;&lt;/nav&gt;
+                                            &lt;/header&gt;
+                                        &lt;/body&gt;
                     </pre>
                     <p>Podemos encontrar diferentes nav en una misma pagina web</p>
                     <p>Por ejemplo una lista ordenada con las secciones de una pagina.</p>
@@ -343,16 +344,16 @@
                 <p>Ejemplo de la estructura basica de HTML con CSS</p>
                 <div id="Ejemplo" style="margin-top: 10px; border: 1px solid #ccc; padding: 10px;">
                     <pre>
-                        &lt;!DOCTYPE html&gt;
-                        &lt;html lang="en"&gt;
-                        &lt;head&gt;
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+                    &lt;head&gt;
                         &lt;meta charset="UTF-8"&gt;
                         &lt;meta name="viewport" content="width=device-width, initil-scale=1.0"&gt;
-                        &lt;head/&gt;
-                        &lt;body&gt;
+                    &lt;head/&gt;
+                    &lt;body&gt;
                         &lt;h1 style="color: blue; text-align: center;"&gt;Hola Mundo!&lt;/h1&gt;
-                        &lt;/body&gt;
-                        &lt;/html&gt; 
+                    &lt;/body&gt;
+                    &lt;/html&gt; 
                     </pre>
                     <p>El codigo renderizado: </p>
                     <h1 style="color: blue; text-align: center;">Hola Mundo!</h1>
@@ -435,9 +436,9 @@
                     <h3>2. Por Clases:</h3>
                     <p>Codigo del archivo .html</p>
                     <pre>
-                                &lt;div class="clase1"&gt; 
+                            &lt;div class="clase1"&gt; 
                                 &lt;p&gt;Ejemplo de selectores por clases&lt;/p&gt;
-                                &lt;/div&gt;
+                            &lt;/div&gt;
                     </pre>
                     <p>Codigo del archivo .css</p>
                     <pre>
@@ -453,10 +454,10 @@
                     <h3>3. Por ID:</h3>
                     <p>Codigo en el archivo .html</p>
                     <pre>
-                        &lt;div id="cabecera"&gt;
-                            &lt;h1&gt;Título principal&lt;/h1&gt;
-                        &lt;/div&gt;
-                        &lt;p id="parrafo-principal"&gt; Este es el párrafo principal.&lt;/p&gt;
+                    &lt;div id="cabecera"&gt;
+                        &lt;h1&gt;Título principal&lt;/h1&gt;
+                    &lt;/div&gt;
+                    &lt;p id="parrafo-principal"&gt; Este es el párrafo principal.&lt;/p&gt;
                     </pre>
                     <p>Codigo en el archivo .css</p>
                     <pre>

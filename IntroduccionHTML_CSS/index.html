@@ -477,12 +477,19 @@
                 <button onclick="mostrarPropiedades()">Propiedades de texto y fuentes</button>
                 <div id="Propiedades" style="display: none; margin-top: 10px; border: 1px solid #ccc; padding: 10px;">
                     <h3>color</h3>
+                    <p>Codigo en el archivo .css: </p>
                     <pre>
-                        &lt;p style= "color: #FF0000;"&gt;Ejemplo de color&lt;/p&gt;
-                       
-                        &lt;p style= "color: red;"&gt;Ejemplo de color&lt;/p&gt;
-                       
-                        &lt;p style= "color: rgb(255, 0, 0);"&gt;Ejemplo de color&lt;/p&gt;
+                                        p {
+                                            color: #FF0000;
+                                        } 
+
+                                        p {
+                                            color: red;
+                                        } 
+                                                
+                                        p {
+                                            color: rgb(255, 0, 0);
+                                        } 
                     </pre>
                     <p>El codigo renderizado:</p>
                     <p style="color: #FF0000;">Ejemplo de color</p>
@@ -491,20 +498,30 @@
                     <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
 
                     <h3>font-family</h3>
+                    <p>Codigo en el archivo .css: </p>
                     <pre>
-         &lt;h1 style="font-family: "Arial", "Helvetica", sans-serif;"&gt;Ejemplo de font-family&lt;/h1&gt;
+                            h1 {
+                                 font-family: Arial, Helvetica, sans-serif;
+                            }
                     </pre>
                     <p>El codigo renderizado: </p>
                     <h4 style="font-family: Arial, Helvetica, sans-serif;">Ejemplo de font-family</h1>
                     <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
 
                     <h3>font-size</h3>
+                    <p>Codigo en el archivo .css: </p>
                     <pre>
-                        &lt;h2 style= "font-size: 16px"&gt; Ejemplo de font-size &lt;/h2&gt;
+                                        h2 {
+                                             font-size: 16px
+                                        }
+                                            
+                                        h2 {
+                                             font-size: 1.2em
+                                        }
 
-                        &lt;h2 style= "font-size: 1.2em"&gt; Ejemplo de font-size &lt;/h2&gt;
-
-                        &lt;h2 style= "font-size: 100%"&gt; Ejemplo de font-size &lt;/h2&gt;
+                                        h2 {
+                                             font-size: 100%
+                                        }
                     </pre>
                     <p>El codigo renderizado: </p>
                     <h2 style="font-size: 16px;">Ejemplo de font-size</h2>
@@ -513,10 +530,15 @@
                     <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
 
                     <h3>font-weight</h3>
+                    <p>Codigo en el archivo .css: </p>
                     <pre>
-                        &lt;h2 style="font-weight: bold;"&gt;Ejemplo de font-weight&lt;/h2&gt;
+                                        h2 {
+                                            font-weight: bold;
+                                        } 
 
-                        &lt;h2 style="font-weight: 700;"&gt;Ejemplo de font-weight&lt;/h2&gt;
+                                        h2 {
+                                            font-weight: 700;
+                                        }
                     </pre>
                     <p>El codigo renderizado: </p>
                     <h4 style="font-weight: bold;">Ejemplo de font-weight</h2>
@@ -525,10 +547,15 @@
 
 
                     <h3>font-style</h3>
+                    <p>El codigo en el archivo .css: </p>
                     <pre>
-                        &lt;h4 style="font-style: italic"&lt;Ejemplo de font-style&lt;/h2&gt;
+                                        h4 {
+                                            font-style: italic;
+                                        }
 
-                        &lt;h4 style="font-style: oblique"&lt;Ejemplo de font-style&lt;/h2&gt;
+                                        h4 {
+                                            font-style: oblique;
+                                        }
                     </pre>
                     <p>El codigo renderizado: </p>
                     <h4 style="font-style: italic">Ejemplo de font-style</h4>
@@ -536,31 +563,52 @@
                     <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
 
                     <h3>text-aling</h3>
+                    <p>El codigo en el archivo .css: </p>
                     <pre>
-                        &lt;h4 style="text-align: center;"&gt;Ejemplo de text-aling&lt;/h4&gt;
+                                        h4 {
+                                            text-align: center;
+                                        }
 
-                        &lt;h4 style="text-align: right;"&gt;Ejemplo de text-aling&lt;/h4&gt;
+                                        h4 {
+                                            text-align: right;
+                                        }
 
-                        &lt;h4 style="text-align: left;"&gt;Ejemplo de text-aling&lt;/h4&gt;
+                                        h4 {
+                                            text-align: left;
+                                        }
 
-                        &lt;h4 style="text-align: justify;"&gt;Ejemplo de text-aling&lt;/h4&gt;
+                                        p {
+                                            text-align: justify;
+                                        }
                     </pre>
                     <p>El codigo renderizado: </p>
                     <h4 style="text-align: center;">Ejemplo de text-aling</h4>
                     <h4 style="text-align: right;">Ejemplo de text-aling</h4>
                     <h4 style="text-align: left;">Ejemplo de text-aling</h4>
-                    <h4 style="text-align: justify;">Ejemplo de text-aling</h4>
+                    <p style="text-align: justify;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Ut fuga perferendis nostrum eaque inventore, vitae sapiente cupiditate 
+                        eos accusamus consectetur maxime molestias quaerat excepturi 
+                        et quas veniam tenetur, doloribus quisquam.</p>
                     <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
 
                     <h3>text-decoration</h3>
+                    <p>Codigo en el archivo .css</p>
                     <pre>
-            &lt;h4 style="text-decoration: underline;"&gt;Ejemplo de text-decoration&lt;/h4&gt;
+                                h4 {
+                                    text-decoration: underline;
+                                }
 
-            &lt;h4 style="text-decoration: none;"&gt;Ejemplo de text-decoration&lt;/h4&gt;
+                                h4 { 
+                                    text-decoration: none;
+                                }
 
-            &lt;h4 style="text-decoration: overline;"&gt;Ejemplo de text-decoration&lt;/h4&gt;
-            
-            &lt;h4 style="text-decoration: line-through;"&gt;Ejemplo de text-decoration&lt;/h4&gt;
+                                h4 {
+                                    text-decoration: overline;
+                                }
+                    
+                                h4 {
+                                    text-decoration: line-through;
+                                }
                     </pre>
                     <p>El codigo renderizado: </p>
                     <h4 style="text-decoration: underline;">Ejemplo de text-decoration</h4>
@@ -731,10 +779,10 @@
                     </pre>
                     <p>Los elementos renderizados se visualizarian asi:  </p>
                     <p>El elemento p: </p>
-                    <p style="background-color: grey;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem tempora hic fuga quae! Ratione totam ab 
+                    <p style="background-color: #585858;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem tempora hic fuga quae! Ratione totam ab 
                         atque non voluptatem maiores placeat accusantium, cumque incidunt qui</p>
                     <p>El elemento h1: </p>
-                    <h1 style="background-color: grey;">Titulo</h1>
+                    <h1 style="background-color: #585858;">Titulo</h1>
                     <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
 
                     <h3>Elementos en linea</h3>
@@ -745,7 +793,7 @@
                     </pre>
                     <p>Los elementos renderizados se visualizarian asi:  </p>
                     <p>El elemeto a: </p>
-                    <a style="background-color: grey;">Youtube</a>
+                    <a style="background-color: #585858;">Youtube</a>
                     <p>El elemento input: </p>
                     <input type="text" placeholder="Nombre">
                     
@@ -756,7 +804,7 @@
                     <p>Convierte un elemento en un elemento de bloque.</p>
                     <p>Renderizado:</p>
                     <p>Elemento a: </p>
-                    <a style="background-color: grey; display: block;">Youtube</a>
+                    <a style="background-color: #585858; display: block;">Youtube</a>
                     <p>Se tomo el elemento a y se cambio de inline a block.</p>
                     <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
 
@@ -764,11 +812,11 @@
                     <p>Convierte un elemento en un elemento en linea.</p>
                     <p>Renderizado:</p>
                     <p>Elemento p: </p>
-                    <p style="background-color: grey; display: inline;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem tempora hic fuga quae! Ratione totam ab 
+                    <p style="background-color: #585858; display: inline;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem tempora hic fuga quae! Ratione totam ab 
                         atque non voluptatem maiores placeat accusantium, cumque incidunt qui</p>
                     <p>Se tomo el elemeto p y se cambio de block a inline</p>
                     <p>Elemento h1</p>
-                    <h1 style="background-color: grey; display: inline;">Titulo</h1>
+                    <h1 style="background-color: #585858; display: inline;">Titulo</h1>
                     <p>Se tomo el elemeto h1 y se cambio de block a inline</p>
                     <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
                     
@@ -776,7 +824,7 @@
                     <p>Combina caracteristicas de ambos.</p>
                     <p>Renederizado: </p>
                     <p>Elemento h</p>
-                    <h2 style="background-color: grey; display: inline-block;">Encabezado</h2>
+                    <h2 style="background-color: #585858; display: inline-block;">Encabezado</h2>
                     <p>Se toma el elemento en bloque y se le da la propiedad inline-block, para que conserve las propiedades de un elemento en bloque
                         y tambien las propiedades de un elemento en linea.</p>
                     <hr style="border: 0.2px solid black; width: 80%; margin: 5% auto;">
@@ -785,9 +833,10 @@
                     <p>Oculta totalmente el elemento.</p>
                     <p>Renderizado: </p>
                     <p>Elemento h2:</p>
-                    <h2 style="background-color: grey; display: none;">Encabezado</h2>
+                    <h2 style="background-color: #585858; display: none;">Encabezado</h2>
                     <p>Se tomo un elemento h2, se le dio la propiedad display: none y desaparecio.</p>
 
+                    
                 </div>
                 
 

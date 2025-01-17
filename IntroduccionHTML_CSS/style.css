@@ -33,6 +33,10 @@ body {
     text-align: left;
 }
 
+.sidebar h1 { 
+    font-family: 'IBM Plex Mono', monospace;
+    margin-top: 0px;
+}
 .sidebar h3 {
     color: #fff;
     margin-bottom: 20px;
